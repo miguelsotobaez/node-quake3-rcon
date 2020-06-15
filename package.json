@@ -1,16 +1,16 @@
 {
-  "name": "quake3-rcon",
+  "name": "quake3-rcon-e",
   "version": "1.0.2",
-  "description": "A tiny library for using Quake 3's RCON server feature, including an command-line interface.",
-  "homepage": "https://github.com/thbaumbach/node-quake3-rcon",
+  "description": "A tiny library for using Quake 3's RCON server feature with encode, including an command-line interface.",
+  "homepage": "https://github.com/miguelsotobaez/node-quake3-rcon-e",
   "readmeFilename": "README.md",
   "scripts": {
-    "start": "node ./bin/quake3-rcon",
+    "start": "node ./bin/quake3-rcon-e",
     "test": "echo no tests yet"
   },
   "preferGlobal": true,
   "bin": {
-    "quake3-rcon": "bin/quake3-rcon"
+    "quake3-rcon": "bin/quake3-rcon-e"
   },
   "main": "src/rcon",
   "directories": {
@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thbaumbach/node-quake3-rcon"
+    "url": "https://github.com/miguelsotobaez/node-quake3-rcon-e"
   },
   "bugs": {
-    "url": "https://github.com/thbaumbach/node-quake3-rcon/issues"
+    "url": "https://github.com/miguelsotobaez/node-quake3-rcon-e/issues"
   },
   "dependencies": {
-    "iconv-lite": "^0.6.0",
+    "iconv-lite": "^0.6.0"
   },
   "keywords": [
     "quake",
