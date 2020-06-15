@@ -1,5 +1,6 @@
 //
 const udp = require('dgram');
+const iconv = require('iconv-lite');
 
 /**
  * Create RCON Connection to a Quake3 Server
@@ -9,6 +10,7 @@ const udp = require('dgram');
  * @param {number|undefined} _CONFIG.port - server rcon port number [optional] [default: 27960]
  * @param {number|undefined} _CONFIG.timeout - socket listen timeout in milliseconds [optional] [default: 1500]
  * @param {boolean|undefined} _CONFIG.debug - dis/enable debug [optional] [default: false]
+ * @param {string} _CONFIG.encode - server address
  * @returns {{send: send}}
  * @constructor
  */
@@ -20,6 +22,7 @@ const RCon = function (_CONFIG) {
     CONFIG.port = CONFIG.port || 27960;
     CONFIG.timeout = CONFIG.timeout || 1500;
     CONFIG.debug = CONFIG.debug || false;
+    CONFIG.encode = CONFIG.encode || "win1251";
 
     /**
      * check if val is of type function
@@ -146,18 +149,11 @@ const RCon = function (_CONFIG) {
         checkTimeout(timeoutMilliSecs);
 
         try {
-            buffer = Buffer.alloc(11 + CONFIG.password.length + command.length); // 4 + 5 + 1 + 1
-            // fill the buffer
-            buffer.writeUInt32LE(0xFFFFFFFF, 0); // magic code
-            buffer.write('rcon ', 4);
-            buffer.write(CONFIG.password, 9, CONFIG.password.length);
-            buffer.write(' ', 9 + CONFIG.password.length, 1);
-            buffer.write(command, 10 + CONFIG.password.length, command.length);
-            buffer.write('\n', 10 + CONFIG.password.length + command.length, 1);
+            buffer = iconv.encode("яяяяrcon "+CONFIG.password+" "+command,CONFIG.encode);
         } catch (e) {
             throw 'failed to prepare send buffer: ' + e;
         }
-
+        
         if (CONFIG.debug === true) {
             console.log('sending command "' + command + '"'
                 + ' to address "' + CONFIG.address + '"'
