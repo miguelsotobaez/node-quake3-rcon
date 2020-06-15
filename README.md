@@ -1,4 +1,5 @@
-# quake3-rcon
+# quake3-rcon-e
+Encode version of q3-rcon
 
 > A tiny library for using Quake 3's RCON server feature, including an command-line interface. Dependency-free.
 
