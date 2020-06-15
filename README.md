@@ -10,13 +10,13 @@ Encode version of q3-rcon
 Install this package globally with [NPM](https://www.npmjs.com/) to use the `command-line interface`. Most OS need you to be root (e.g. using `sudo`) to install a global npm package:
 
 ```sh
-$ [sudo] npm -g install quake3-rcon
+$ [sudo] npm -g install quake3-rcon-e
 ```
 
 or install `quake3-rcon` as a dependency for your package:
 
 ```sh
-$ npm install --save quake3-rcon
+$ npm install --save quake3-rcon-e
 ```
 
 `quake3-rcon` depends on [Node.js](https://nodejs.org/). Tested with `node v12.16`.
