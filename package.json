@@ -23,7 +23,9 @@
   "bugs": {
     "url": "https://github.com/thbaumbach/node-quake3-rcon/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "iconv-lite": "^0.6.0",
+  },
   "keywords": [
     "quake",
     "quake3",
