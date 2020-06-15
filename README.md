@@ -44,7 +44,8 @@ var rcon = new Q3RCon({
     address: '127.0.0.1',
     port: 27960, // optional
     password: 'my_super_secret_password',
-    debug: true // optional
+    debug: true, // optional
+    encode: "win1251"
 });
 ```
 
