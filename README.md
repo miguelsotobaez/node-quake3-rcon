@@ -3,7 +3,7 @@ Encode version of q3-rcon
 
 > A tiny library for using Quake 3's RCON server feature, including an command-line interface. Dependency-free.
 
-`quake3-rcon` lets you send rcon commands to your Quake 3 server. You can use it as a library for your project or as an interface to access your server from your command-line.
+`quake3-rcon-e` lets you send rcon commands to your Quake 3 server. You can use it as a library for your project or as an interface to access your server from your command-line.
 
 ## Install
 
@@ -19,7 +19,7 @@ or install `quake3-rcon` as a dependency for your package:
 $ npm install --save quake3-rcon-e
 ```
 
-`quake3-rcon` depends on [Node.js](https://nodejs.org/). Tested with `node v12.16`.
+`quake3-rcon-e` depends on [Node.js](https://nodejs.org/). Tested with `node v12.16`.
 
 ## Usage: command-line interface
 
