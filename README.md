@@ -80,10 +80,6 @@ Found a bug? Open an issue [here](https://github.com/thbaumbach/node-quake3-rcon
 
 Wanna help? Submit a pull request or contact me.
 
-Wanna tip me a beer? Use [Bitcoin](bitcoin:14pSD9AmuNhLDbGRXehxbhwzRSRrkpiAKg): 14pSD9AmuNhLDbGRXehxbhwzRSRrkpiAKg
 
 ## License
-
-Copyright (c) 2016 Thomas Baumbach <tom@xolo.pw>
-
 Licensed under the MIT License
