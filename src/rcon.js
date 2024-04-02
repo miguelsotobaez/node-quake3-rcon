@@ -18,6 +18,8 @@ const RCon = function (_CONFIG) {
 
     const CONFIG = _CONFIG;
 
+    const APP = 'NewApp';
+
     // set defaults when required
     CONFIG.port = CONFIG.port || 27960;
     CONFIG.timeout = CONFIG.timeout || 1500;
